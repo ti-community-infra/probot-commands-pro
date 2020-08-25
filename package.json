@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tidb-community-bots/pro-commands.git"
+    "url": "git+https://github.com/tidb-community-bots/probot-commands-pro.git"
   },
   "author": "Rustin-Liu",
   "license": "ISC",
-  "homepage": "https://github.com/tidb-community-bots/pro-commands",
+  "homepage": "https://github.com/tidb-community-bots/probot-commands-pro",
   "devDependencies": {
     "jest": "^23.6.0",
     "probot": "^6.2.0",

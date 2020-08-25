@@ -3,12 +3,15 @@ const commands = require('..')
 
 describe('commands', () => {
   let callback
+  let callback1
   let robot
 
   beforeEach(() => {
     callback = jest.fn()
+    callback1 = jest.fn()
     robot = createRobot({ app: jest.fn().mockReturnValue('test') })
     commands(robot, 'foo', callback)
+    commands(robot, 'pick-up', callback1)
   })
 
   it('invokes callback and passes command logic', async () => {
@@ -117,5 +120,18 @@ describe('commands', () => {
 
     expect(callback).toHaveBeenCalled()
     expect(callback.mock.calls[0][1]).toEqual({ name: 'foo', arguments: 'bar' })
+  })
+
+  it('invokes callback and passes command logic with command which contains `-`', async () => {
+    await robot.receive({
+      event: 'issue_comment',
+      payload: {
+        action: 'created',
+        comment: { body: 'hello world\n\n/pick-up bar' }
+      }
+    })
+
+    expect(callback1).toHaveBeenCalled()
+    expect(callback1.mock.calls[0][1]).toEqual({ name: 'pick-up', arguments: 'bar' })
   })
 })
