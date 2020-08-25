@@ -11,13 +11,13 @@ A Probot app could then use this extension to listen for the `remind` slash comm
 ## Installation
 
 ```
-$ npm install --save probot-commands
+$ npm install --save probot-commands-pro
 ```
 
 ## Usage
 
 ```js
-const commands = require('probot-commands')
+const commands = require('probot-commands-pro')
 
 module.exports = robot => {
   // Type `/label foo, bar` in a comment box for an Issue or Pull Request
@@ -27,3 +27,6 @@ module.exports = robot => {
   });
 }
 ```
+
+## Thanks
+Powered by [commands](https://github.com/probot/commands)
