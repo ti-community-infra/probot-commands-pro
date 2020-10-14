@@ -1,4 +1,4 @@
-name: Test CI
+name: Test
 
 on: [push]
 
@@ -19,3 +19,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm install
       - run: npm test
+      - name: codecov
+        run: npx codecov
+        # run codecov only once
+        if: matrix.node-version == '12.x'
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
