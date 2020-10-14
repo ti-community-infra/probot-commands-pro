@@ -1,7 +1,7 @@
 # Probot: Commands
 
 [![GitHub Actions](https://github.com/tidb-community-bots/probot-commands-pro/workflows/Test/badge.svg?branch=master)](https://github.com/features/actions)
-[![Codecov](https://badgen.net/codecov/c/github/tidb-community-bots/probot-commands-pro?icon=codecov)](https://codecov.io/gh/tidb-community-bots/probot-commands-pro)
+[![codecov](https://codecov.io/gh/tidb-community-bots/probot-commands-pro/branch/master/graph/badge.svg)](https://codecov.io/gh/tidb-community-bots/probot-commands-pro)
 [![Probot](https://badgen.net/badge/built%20with/probot/orange?icon=dependabot&cache=86400)](https://probot.github.io/)
 [![jest](https://facebook.github.io/jest/img/jest-badge.svg)](https://github.com/facebook/jest)
 [![ISC License](https://badgen.net/badge/license/ISC/blue?cache=86400)](https://tidb-community-bots.isc-license.org)
