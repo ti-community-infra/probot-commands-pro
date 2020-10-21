@@ -14,7 +14,7 @@
   "license": "ISC",
   "homepage": "https://github.com/tidb-community-bots/probot-commands-pro",
   "devDependencies": {
-    "jest": "^23.6.0",
+    "jest": "^25.5.4",
     "probot": "^6.2.0",
     "standard": "^14.3.4"
   },
