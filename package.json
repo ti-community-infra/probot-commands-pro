@@ -15,7 +15,7 @@
   "homepage": "https://github.com/tidb-community-bots/probot-commands-pro",
   "devDependencies": {
     "jest": "^25.5.4",
-    "probot": "^6.2.0",
+    "probot": "^11.2.2",
     "standard": "^15.0.0"
   },
   "standard": {
